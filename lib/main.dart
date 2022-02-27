@@ -53,7 +53,7 @@ class _MyHomePageState extends State<MyHomePage> {
         ],
       ),
       body: StreamBuilder<QuerySnapshot>(
-        stream: FirebaseFirestore.instance.collection("posts").snapshots(),
+        stream: FirebaseFirestore.instance.collection("posts").orderBy("createdAt", descending: true).snapshots(),
         builder: (BuildContext context, AsyncSnapshot<QuerySnapshot> snapshot) {
           if( snapshot.connectionState == ConnectionState.waiting) {
             return const Center(child: CircularProgressIndicator());
@@ -63,7 +63,6 @@ class _MyHomePageState extends State<MyHomePage> {
             children: snapshot.data!.docs.map((DocumentSnapshot document) {
               return Card(
                 child: ListTile(
-                  subtitle: const Text("subtitle"),
                   title: Text(document["content"]),
                 ),
               );
