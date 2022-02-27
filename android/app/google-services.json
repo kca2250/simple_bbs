@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "890934970499",
+    "project_id": "simple-bbs-57ff8",
+    "storage_bucket": "simple-bbs-57ff8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:890934970499:android:c42758ed3ccff2064df3b6",
+        "android_client_info": {
+          "package_name": "com.example.simple_bbs"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "890934970499-4a9im5lbmac8h9j0a3rrlnij1sgqvpqa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA62W6pKF4JO-YlU2lzMe2yY6iR5iaZrs4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "890934970499-4a9im5lbmac8h9j0a3rrlnij1sgqvpqa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
